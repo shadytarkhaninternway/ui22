@@ -1,0 +1,389 @@
+Design a modern and professional UI for a web platform called "InternWay", an AI-powered internship and mentorship matching system.
+The design should exactly follow the same visual style shown in the reference image — clean white and gradient blue/purple background, bold and large hero text, rounded buttons, and minimal top navigation bar.
+Use a soft gradient background (#f0f4ff → #e6e9ff), with bold blue-to-purple gradient text for headlines, and consistent light theme with option for dark mode toggle.
+
+🎨 General Design Guidelines
+
+Style: Modern, clean, and minimal — like a SaaS startup landing page.
+
+Primary colors:
+
+Gradient: from #007BFF to #7B2FF7
+
+Accent: soft blue #E8EEFF and gray text #444
+
+Typography: Large, readable font (e.g., Inter, Poppins, or Nunito Sans).
+
+Buttons: Rounded corners (radius 12px), shadow hover effect.
+
+Icons: Simple line icons (e.g., Lucide or Feather).
+
+Layout: Responsive grid-based structure with clear spacing and section separation.
+
+🧠 Pages to Design
+🏠 1. Landing Page (Public)
+
+Header/Navbar:
+
+Logo (InternWay with “IW” square icon).
+
+Nav links: Home, About Us.
+
+Icons: 🌐 (Language), 🌙 (Dark mode).
+
+Buttons: Login, Sign Up.
+
+Hero Section:
+
+Large gradient headline: “Find Your Perfect Internship Match”
+
+Subtext: “Connect with mentors and companies through AI-powered matching.”
+
+Two buttons: “Get Started” (primary blue) and “Learn More” (outlined).
+
+Features Section:
+
+Grid layout of 3×3 cards for the 9 core features (AI Matching, CV Analysis, Mentorship Booking, etc.).
+
+Each card: icon, title, and short description.
+
+How It Works Section:
+
+3-step horizontal layout: Upload CV → AI Matches → Get Hired.
+
+Simple vector illustrations.
+
+Video Section (optional):
+
+Embedded demo video placeholder.
+
+Footer:
+
+Links: About, Contact, Privacy Policy, Terms.
+
+Copyright © InternWay.
+
+👤 2. Student Pages (After Login)
+
+Navigation bar (top): logo, notification bell, logout button.
+Sidebar (left): Dashboard, Internships, Mentorships, Profile, My Sessions.
+
+Student Dashboard:
+
+3 statistic cards: Internships Applied, Sessions Booked, Upcoming Session.
+
+Personalized recommendations (top 3 internships).
+
+Recommended mentors list (with "Book Session" buttons).
+
+Internships Page:
+
+Search bar + filters (Location, Paid/Unpaid, City).
+
+Card listings: Company, Role, Matching Score, Apply button.
+
+Mentorship Page:
+
+Mentor cards with name, field, years of experience, rating, and available slots.
+
+Booking popup confirmation modal.
+
+Profile Page:
+
+Editable personal info, CV upload, skills list (editable tags), contact info.
+
+Clean two-column layout.
+
+My Sessions Page:
+
+Table or cards showing session title, date/time, mentor, and status (Pending, Confirmed, Rejected).
+
+Buttons: Reschedule, Cancel.
+
+🏢 3. Company Pages
+
+Sidebar (always visible): Dashboard, Post Internship, Manage Internships, Profile, Notifications, Settings, Logout.
+
+Dashboard:
+
+Statistic cards: Internships Posted, Total Applicants.
+
+Latest notifications list.
+
+Post Internship Page:
+
+Clean form with labeled inputs and validation (Title, Description, Duration, Location, Skills, Deadline, Paid/Unpaid).
+
+“Publish” button (blue).
+
+Manage Internships:
+
+Table with Internship Title, Duration, Applicants count.
+
+Buttons: View Applicants, Close Internship.
+
+Applicants Page:
+
+Table with Name, University, Skills, CV download, Accept/Reject buttons.
+
+Notifications triggered on action.
+
+Company Profile Page:
+
+Logo upload + preview, Description, Industry dropdown, Website URL, Social links with icons.
+
+“Update Profile” button with validation messages.
+
+Settings Page:
+
+Password change field with real-time validation (min 8 chars, letters + numbers).
+
+👨‍🏫 4. Mentor Pages
+
+Dashboard:
+
+KPI cards: This Week Sessions, Total Sessions, Rating, Hours Mentored.
+
+Upcoming Sessions list.
+
+Schedule Page:
+
+Add Availability Form (Date, Start Time, End Time, Topic, Session Link).
+
+List of current slots with delete action.
+
+My Sessions:
+
+List of all booked sessions.
+
+Buttons: Accept, Reject, View Student Profile.
+
+Mentor Profile:
+
+Form with Name, Headline, Bio, Expertise tags, Contact info, LinkedIn URL.
+
+Save Changes button.
+
+⚙️ Design Notes
+
+Responsive layout for desktop, tablet, and mobile.
+
+Hover animations on buttons and cards.
+
+Consistent design system (colors, shadows, fonts).
+
+Use icons and illustrations where appropriate to keep the design engaging.
+
+Real-time feel — show dynamic elements like badges, counters, and notification dots.
+
+Output:
+A complete multi-page UI design prototype for the “InternWay” web platform — visually identical in structure and style to the provided screenshot, but expanded to include all private pages (Student, Company, Mentor). The result should be ready for export to Figma or React for implementation.
+
+هل تحب أظبطلك النسخة دي مخصوص بصيغة مناسبة علشان تنسخها كوبي وتلصقها في Replit أو Figma AI مباشرة (formatted + emojis + clear hierarchy)؟
+ولا تفضلها تكون مختصرة في جمل صغيرة قوية زي برومبت ChatGPT Replit Design mode؟
+
+You said:
+replit
+ChatGPT said:
+
+تمام ✅🔥
+بما إنك ناوي تستخدم Replit AI، فخليني أديك دلوقتي النسخة الجاهزة للنسخ واللصق مباشرة جوّا Replit —
+برومبت احترافي، قوي، ومهيأ مخصوص لتصميم واجهة InternWay
+بـ Light & Dark mode + 3D animations + smooth transitions + responsive layout.
+
+⚡️ البرومبت النهائي لـ Replit AI (انسخه كما هو):
+
+Prompt:
+
+Build a modern, responsive web UI/UX design for a platform called "InternWay" — an AI-powered website that connects Students, Mentors, and Companies for internship matching and mentorship booking.
+
+The project should include:
+
+✅ Home Page (Landing Page)
+
+✅ Login Page
+
+✅ Sign Up Page
+
+Use React + TailwindCSS + Framer Motion for animations.
+Integrate Dark/Light mode toggle (top-right corner).
+Add 3D animations or interactive illustrations using simple Three.js or Spline embeds.
+
+🎨 General Design
+
+Style: Clean, futuristic, startup-grade design.
+
+Color Palette:
+
+Primary: gradient between #007BFF → #7B2FF7
+
+Accent: soft blue #E8EEFF
+
+Background: Dark navy for dark mode, White/Soft gray for light mode.
+
+Typography: Poppins or Inter.
+
+Buttons: Rounded corners (radius 12px) + smooth hover effects + glow shadows.
+
+Use subtle motion transitions between sections.
+
+🏠 Home Page Requirements
+
+Purpose: Introduce the platform, highlight key features, and direct users to sign up or log in.
+
+1. Header
+
+Logo (InternWay) top-left.
+
+Navigation (Home, About, Contact).
+
+Right side: Sign Up, Login, 🌐 Language icon, 🌙 Dark Mode toggle.
+
+Sticky header with transparent blur on scroll.
+
+2. Hero Section
+
+Large headline (H1): “Find the right internship. Connect with mentors. Grow your career.”
+
+Subtext: “Our AI platform matches students, mentors, and companies to accelerate professional growth.”
+
+Two buttons: “Start Now” (Primary) → redirects to login, and “Learn More” (Secondary).
+
+Add a smooth 3D animated background (rotating shapes, or Spline scene).
+
+3. Features Section
+
+Title: “Everything You Need to Succeed.”
+
+Subtitle: “Our platform provides comprehensive tools for students, mentors, and companies.”
+
+Four animated cards with icons:
+
+Smart Matching → “AI-powered algorithm matches students with internships.”
+
+CV Analysis → “Upload your CV and let our parser extract your skills.”
+
+Mentorship Booking → “Connect with experts to grow your career.”
+
+Quality Opportunities → “Access internships from top companies.”
+
+Add hover scale and shadow animation for cards.
+
+4. How It Works Section
+
+Title: “How It Works.”
+
+Subtitle: “Simple steps to launch your career.”
+
+Three Steps (with icons & animations):
+
+Create Your Profile – “Sign up and upload your CV.”
+
+Get Matched – “AI recommends best internships & mentors.”
+
+Start Growing – “Apply, connect, and track your progress.”
+
+5. Video Section
+
+Title: “See InternWay in Action.”
+
+Embedded YouTube video with responsive frame.
+
+Smooth fade-in animation when visible.
+
+6. Footer
+
+Links: Privacy Policy | Terms of Service
+
+Contact Info: Email, Address, Phone
+
+Social Media Icons (LinkedIn, Facebook, Instagram)
+
+Simple dark gradient background.
+
+🔐 Login Page
+
+Purpose: Authenticate users and redirect to their dashboard based on account type.
+
+Fields:
+
+Email
+
+Password
+
+Account Type (Student / Mentor / Company)
+
+Buttons & Links:
+
+Login button (Primary)
+
+Forgot Password link
+
+“Don’t have an account? Sign Up” → redirects to Sign Up page
+
+Animations:
+
+Floating 3D icons or background gradient waves.
+
+Smooth fade transitions between fields.
+
+🧾 Sign Up Page
+
+Purpose: Register new users by account type.
+
+Account Types: Student, Mentor, Company
+Once selected, the form updates dynamically to show specific fields.
+
+Common Fields:
+
+Full Name, Email, Password, Confirm Password
+
+Student Fields:
+
+University, College, Major, Graduation Year, CV Upload (PDF/DOCX)
+
+Auto-CV parsing (extract skills & experience).
+
+Mentor Fields:
+
+Field of Expertise, Years of Experience, Job Title, LinkedIn Profile
+
+Company Fields:
+
+Company Name, Industry, Location, Description, Contact Info
+
+Validation:
+
+Password strength check
+
+Required fields alert
+
+CV file format validation
+
+Buttons:
+
+Sign Up (Primary)
+
+“Already have an account? Login”
+
+Animations:
+
+Smooth form transitions between account types.
+
+Subtle 3D background animation (floating cubes or spheres).
+
+⚙️ Technical Requirements
+
+Fully responsive (desktop, tablet, mobile)
+
+Implement Light/Dark mode theme switch
+
+Animated transitions between pages
+
+Include Framer Motion for smooth reveal effects
+
+Keep design minimal, modern, and visually engaging
+
+Output:
+A complete, visually stunning web UI (Home + Login + Sign Up) for “InternWay,” with 3D effects, animations, and dark/light modes.
+Design should be ready to deploy or export for future dashboard expansion.

@@ -1,0 +1,157 @@
+Create a complete multi-role platform called "InternWay" with the following specifications:
+## Tech Stack
+- React + TypeScript + Vite
+- TailwindCSS with shadcn/ui components
+- Framer Motion for animations
+- Wouter for routing
+- Express backend
+## Pages & Features
+### 1. Navbar (in all pages)
+- Fixed top navigation with glassmorphism effect
+- Logo with animated icon
+- Navigation links: Home, About Us
+- Language selector (English/Arabic) with dropdown
+- Theme toggle (Dark/Light mode) with animated icons
+- Auth buttons (Sign Up, Login)
+- Responsive mobile menu with hamburger animation
+### 2. Login Page
+- Split layout: Left side with 3D animated illustration, Right side with form
+- Role selector (Student/Mentor/Company) with animated cards
+- Email and Password inputs with floating labels and icons
+- Remember Me checkbox
+- Forgot Password link
+- Form validation with error messages
+- Gradient submit button with hover effects
+- Link to Sign Up page
+### 3. Sign Up Page
+- Dynamic multi-step form based on selected role
+- Animated role selector at top
+- Basic fields: Full Name, Email, Password, Confirm Password
+- Password strength indicator with color-coded animation
+**Student specific fields:**
+- University dropdown, College, Degree, Major, Graduation Year
+- CV upload zone with drag-drop functionality
+- CV parsing animation (optional)
+**Mentor specific fields:**
+- Field of Expertise (multi-select tags)
+- Years of Experience, Job Title
+- LinkedIn/Profile URL
+**Company specific fields:**
+- Company Name, Industry, Location
+- Phone Number, Address
+- Company Description (textarea with character limit)
+### 4. Home Page
+- Hero section with animated gradient background
+- Floating 3D shapes in background
+- Features section with 4 cards:
+  * Smart Matching with AI
+  * CV Analysis
+  * Mentorship Booking
+  * Quality Opportunities
+- How It Works section (3 steps with animated icons)
+- Video/Demo section placeholder
+- Footer with contact info and social links
+## Design Requirements
+- Modern glassmorphism effects
+- Smooth page transitions
+- Hover animations on all interactive elements
+- Gradient buttons and accent colors
+- Responsive design (mobile, tablet, desktop)
+- Professional color scheme (primary blue/purple gradient)
+- Clean typography with proper spacing
+- Loading states for forms
+- Toast notifications for user feedback
+## Code Structure
+- Component-based architecture
+- Reusable UI components in components/ui/
+- Custom components (AnimatedInput, RoleSelector, etc.)
+- Theme provider for dark/light mode
+- Form validation and error handling
+- Proper TypeScript types throughout
+Make it production-ready with clean, maintainable code.
+💾 ملفات التصميم الأساسية
+1. Theme Configuration (client/src/index.css)
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 10%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 10%;
+    --primary: 212 100% 50%;
+    --primary-foreground: 0 0% 100%;
+    /* ... باقي المتغيرات */
+  }
+  
+  .dark {
+    --background: 222 47% 11%;
+    --foreground: 0 0% 95%;
+    /* ... باقي المتغيرات */
+  }
+}
+2. Component Structure
+// الملفات الأساسية اللي لازم تعملها:
+client/src/components/
+├── Navbar.tsx              // ✅ موجود
+├── ThemeToggle.tsx          // ✅ موجود
+├── ThemeProvider.tsx        // ✅ موجود
+├── HomePage.tsx             // ✅ موجود
+├── LoginPage.tsx            // ✅ موجود
+├── SignUpPage.tsx           // ✅ موجود
+├── AnimatedInput.tsx        // ✅ موجود
+├── RoleSelector.tsx         // ✅ موجود
+├── FloatingShapes.tsx       // ✅ موجود
+├── CVUploadZone.tsx         // ✅ موجود
+└── ui/                      // ✅ shadcn components
+🚀 خطوات الإعداد من الصفر
+في Repl جديد:
+Initialize the project:
+npm init -y
+npm install react react-dom wouter
+npm install -D vite @vitejs/plugin-react typescript
+npm install framer-motion lucide-react tailwindcss
+npm install @radix-ui/react-dropdown-menu @radix-ui/react-select
+npm install class-variance-authority clsx tailwind-merge
+Setup TailwindCSS:
+npx tailwindcss init -p
+Install shadcn/ui:
+npx shadcn@latest init
+npx shadcn@latest add button input label select checkbox dropdown-menu
+استخدم البرومبت أعلاه مع Replit AI لإنشاء كل الصفحات
+📦 Package.json Scripts
+{
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  }
+}
+🎨 Design Tokens
+// الألوان والأنماط المستخدمة:
+const designTokens = {
+  colors: {
+    primary: "hsl(212, 100%, 50%)",      // Blue
+    secondary: "hsl(160, 84%, 39%)",     // Green
+    accent: "hsl(270, 80%, 60%)",        // Purple
+  },
+  animations: {
+    duration: "0.3s",
+    easing: "cubic-bezier(0.4, 0, 0.2, 1)",
+  },
+  spacing: {
+    section: "5rem",
+    card: "1.5rem",
+  }
+}
+📋 Checklist لإعادة إنشاء المشروع
+ إنشاء Repl جديد (Node.js)
+ تثبيت كل الـ dependencies
+ Setup TailwindCSS + shadcn/ui
+ استخدام البرومبت الكامل مع AI
+ إضافة الـ Navbar لكل الصفحات
+ تفعيل Dark Mode
+ تفعيل Language Selector
+ اختبار Responsive Design
+ إضافة Animations
